@@ -52,15 +52,15 @@ console.log(teachers);
 
 let positionFabio = teachers.indexOf(`Fabio`) + 1;
 console.log(Boolean(positionFabio));
+
 const isFabioPresent = positionFabio;
 console.log(`Fabio is in position number ${positionFabio}`);
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 
-let positionLewis = teachers.indexOf('Lewis') + 1;
-const lewisIndex = positionLewis;
-console.log(`Lewis is in position number ${positionLewis}`);
+const lewisIndex = teachers.indexOf('Lewis') + 1;
+console.log(`Lewis is in position number ${lewisIndex}`);
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
@@ -71,6 +71,5 @@ console.log(teachersString);
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 
-teacherNumber = teachers.length;
-
-const isTeachersEmpty = null;
+const isTeachersEmpty = (teachers.length === 0);
+console.log('isTeachersEmpty', isTeachersEmpty);
